@@ -22,17 +22,21 @@ public class DeretFibonacci {
         System.out.println("Masukan Jumlah deret fibonacci :    ");
         int n = scan.nextInt();
         long fib[] = new long[n];
+        int hasil = 0;
          
         fib[0] = 0;
         fib[1] = 1;
          
         for(int i = 2; i < n; i++) {
             fib[i] = fib[i-1] + fib[i-2];
+            hasil+=fib[i];
         }
          
-        for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
+        for (int i = n; i != 0; i--) {
+            System.out.print(fib[i-1] +  " ");
         }
+        System.out.println("");
+        System.out.println("hasil penjumlahan deret = "+(hasil+1));
     }
  
 }
