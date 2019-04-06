@@ -32,8 +32,8 @@ public class DeretFibonacci {
             hasil+=fib[i];
         }
          
-        for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
+        for (int i = n; i != 0; i--) {
+            System.out.print(fib[i-1] +  " ");
         }
         System.out.println("");
         System.out.println("hasil penjumlahan deret = "+(hasil+1));
